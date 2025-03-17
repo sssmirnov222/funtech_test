@@ -1,0 +1,125 @@
+.footer {
+  background: #141416;
+
+  .blok {
+    color: #818181;
+  }
+
+  .footer__name {
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    padding: 10vh 5vw 2vh 5vw;
+
+    .footer__logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .footer__logo img {
+      width: 30px;
+      height: 20px;
+    }
+
+    .footer__logo span {
+      font-size: 1.4rem;
+      margin-left: 10px;
+    }
+  }
+  .footer__name span {
+    color: white;
+  }
+
+  .footer__navigation {
+    display: flex;
+  }
+
+  .footer__navigation li > a {
+    color: #b9b9b9;
+    margin-right: 2vw;
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  .footer__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh 5vw;
+
+    .footer__rights span {
+      color: #999999;
+    }
+
+    .footer__network {
+      display: flex;
+    }
+    .footer__network li {
+      margin-right: 2.5vw;
+      list-style-type: none;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .blok {
+    color: #818181;
+  }
+
+  .footer__name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10vh 5vw 2vh 5vw;
+
+    .footer__logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .footer__logo img {
+      width: 30px;
+      height: 20px;
+    }
+
+    .footer__logo span {
+      font-size: 1.4rem;
+      margin-left: 10px;
+    }
+  }
+  .footer__name span {
+    color: white;
+  }
+
+  .footer__navigation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__navigation li {
+    color: #b9b9b9;
+    margin-right: 2vw;
+    list-style-type: none;
+    text-decoration: none;
+    margin-top: 15px;
+  }
+
+  .footer__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh 5vw;
+
+    .footer__rights span {
+      color: #999999;
+    }
+
+    .footer__network {
+      display: flex;
+    }
+    .footer__network li {
+      margin-right: 2.5vw;
+      list-style-type: none;
+    }
+  }
+}

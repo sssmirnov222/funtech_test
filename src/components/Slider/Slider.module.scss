@@ -1,0 +1,35 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  background: #f1f1f1;
+
+  .sliderMap {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+}
+.slider__header {
+  text-align: center;
+  padding-top: 20px;
+  color: #c5c5c5;
+}
+.sliderCard {
+  display: flex;
+  transition: transform 2s ease;
+}
+
+.sliderButton {
+  display: flex;
+  justify-content: center;
+  margin: 6vh 6vw;
+  border-radius: 12px;
+  font-size: 24px;
+}
+.sliderButton button {
+  background: white;
+  height: 3rem;
+  width: 3rem;
+  border: 0;
+  cursor: pointer;
+}

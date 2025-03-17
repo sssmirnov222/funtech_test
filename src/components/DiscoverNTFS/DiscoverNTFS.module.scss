@@ -1,0 +1,219 @@
+.createNTF {
+  display: flex;
+  justify-content: space-between;
+
+  .main__createNTF {
+    display: flex;
+    flex-direction: column;
+    margin: 0vh 5vw 0vh 5vw;
+
+    .main__createNTF_explore {
+      height: 50px;
+      width: 150px;
+      border-radius: 10px;
+      background: #141416;
+      color: white;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .main__createNTF_create {
+      height: 50px;
+      width: 150px;
+      border-radius: 10px;
+      background: white;
+      color: black;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+}
+
+.main__createNTF h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  width: 500px;
+}
+
+.main__createNTF p {
+  width: 400px;
+}
+
+.main__createNTF article {
+  margin-top: 25px;
+}
+
+.main__createNTF article > button:last-child {
+  margin-left: 15px;
+}
+
+.main__image {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+
+  .main__image_NTFC {
+    height: 20rem;
+    padding: 4vh 1vw;
+  }
+
+  .main__image_Arrow {
+    height: 100px;
+    padding: 10vh 1vw 0vh 0vw;
+  }
+
+  .main__image_ornament {
+    margin-left: 30px;
+  }
+
+  .main__image_Sun {
+    height: 16rem;
+    padding: 10vh 1vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .createNTF {
+    display: flex;
+    flex-direction: column;
+
+    .main__createNTF {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0vh 5vw 0vh 5vw;
+
+      .main__createNTF_explore {
+        height: 50px;
+        width: 150px;
+        border-radius: 10px;
+        background: #141416;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      .main__createNTF_create {
+        height: 50px;
+        width: 150px;
+        border-radius: 10px;
+        background: white;
+        color: black;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .main__createNTF h1 {
+    font-size: 42px;
+    margin-bottom: 0;
+    width: 300px;
+  }
+
+  .main__createNTF p {
+    font-size: 12px;
+    width: 320px;
+  }
+
+  .main__createNTF article {
+    margin-top: 25px;
+  }
+
+  .main__createNTF article > button:last-child {
+    margin-left: 15px;
+  }
+
+  .main__image {
+    display: flex;
+    align-items: center;
+
+    .main__image_NTFC {
+      height: 200px;
+      padding: 20px;
+    }
+
+    .main__image_Arrow {
+      height: 50px;
+      padding: 40px 0px 0px 0px;
+    }
+
+    .main__image_Sun {
+      height: 150px;
+      padding: 40px 0px 20px 0px;
+    }
+  }
+}
+
+@media (max-width: 1060px) {
+  .createNTF {
+    display: flex;
+
+    .main__createNTF {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0vh 5vw 0vh 5vw;
+
+      .main__createNTF_explore {
+        height: 50px;
+        width: 150px;
+        border-radius: 10px;
+        background: #141416;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      .main__createNTF_create {
+        height: 50px;
+        width: 150px;
+        border-radius: 10px;
+        background: white;
+        color: black;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .main__createNTF h1 {
+    font-size: 42px;
+    margin-bottom: 0;
+    width: 300px;
+  }
+
+  .main__createNTF p {
+    font-size: 12px;
+    width: 320px;
+  }
+
+  .main__createNTF article {
+    margin-top: 25px;
+  }
+
+  .main__createNTF article > button:last-child {
+    margin-left: 15px;
+  }
+
+  .main__image {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .main__image_NTFC {
+      height: 200px;
+      padding: 20px;
+    }
+
+    .main__image_Arrow {
+      height: 50px;
+      padding: 40px 0px 0px 0px;
+    }
+
+    .main__image_Sun {
+      height: 150px;
+      padding: 40px 0px 20px 0px;
+    }
+  }
+}
