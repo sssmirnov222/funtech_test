@@ -9,6 +9,10 @@
     margin: 0;
   }
 
+  .header__menu {
+    display: none;
+  }
+
   section {
     display: flex;
     align-items: center;
@@ -44,7 +48,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .header {
     display: flex;
     justify-content: space-between;
@@ -54,8 +58,13 @@
 
     section {
       display: flex;
-      align-items: flex-start;
-      margin: 0;
+      justify-content: space-between;
+      margin: 30px 50px;
+    }
+
+    .header__menu {
+      display: block;
+      margin-left: 80%;
     }
 
     .header__logo {
@@ -75,4 +84,8 @@
       display: none;
     }
   }
+}
+
+.modal {
+  margin: 0;
 }

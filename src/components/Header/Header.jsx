@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import style from "../Header/Header.module.scss";
 import logo from "../../image/Logo.png";
 import Modal from "../Modal/Modal";
+import menu from "../../image/menu.png";
 
 const Header = () => {
   const [isModal, setModal] = useState(false);
@@ -12,14 +13,15 @@ const Header = () => {
   return (
     <header className={style.header}>
       <section>
+        <img className={style.header__logo} src={logo} alt="" />
+        <span>DiveSea</span>
         <img
-          className={style.header__logo}
-          src={logo}
+          src={menu}
           alt=""
           onClick={openModal}
+          className={style.header__menu}
         />
-        <span>DiveSea</span>
-        <Modal isOpen={isModal} onClose={closeModal} className={style.modal} />
+
         <nav className={style.header__navigation}>
           <ul>
             <li>
@@ -37,6 +39,7 @@ const Header = () => {
           </ul>
         </nav>
       </section>
+      <Modal isOpen={isModal} onClose={closeModal} className={style.modal} />
 
       <button className={style.header__connect}>Connect Wallet</button>
     </header>

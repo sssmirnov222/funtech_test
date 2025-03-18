@@ -39,11 +39,13 @@ const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => prevIndex + 1 + slider.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % slider.length);
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => prevIndex - 1 - slider.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + slider.length) % slider.length
+    );
   };
 
   return (
@@ -57,7 +59,7 @@ const Slider = () => {
             return (
               <section
                 className={style.sliderCard}
-                style={{ transform: `translateX(-${currentIndex * 50}%)` }}
+                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
               >
                 <SliderList
                   name={slide.name}

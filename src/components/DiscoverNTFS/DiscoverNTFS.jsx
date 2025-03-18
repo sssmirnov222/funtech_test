@@ -30,11 +30,30 @@ const DiscoverNTFS = () => {
           <button className={style.main__createNTF_explore}>Expore more</button>
           <button className={style.main__createNTF_create}>Create NFT</button>
         </article>
-        <article></article>
+        <article className={style.main__createNTF_result}>
+          <div>
+            <span>
+              <strong>430K+</strong>
+            </span>
+            <span>Art Works</span>
+          </div>
+          <div>
+            <span>
+              <strong>159K+</strong>
+            </span>
+            <span>Creators</span>
+          </div>
+          <div>
+            <span>
+              <strong>87K+</strong>
+            </span>
+            <span>Collections</span>
+          </div>
+        </article>
       </section>
       <section className={style.main__image}>
         <article>
-          <div>
+          <div className={style.main__image_flex}>
             {animationImages.map((image, index) => (
               <img
                 key={index}
