@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "../Header/Header.module.scss";
 import logo from "../../image/Logo.png";
+import Modal from "../Modal/Modal";
 
 const Header = () => {
+  const [isModal, setModal] = useState(false);
+
+  const openModal = () => setModal(true);
+  const closeModal = () => setModal(false);
+
   return (
     <header className={style.header}>
       <section>
-        <img className={style.header__logo} src={logo} alt="" />
+        <img
+          className={style.header__logo}
+          src={logo}
+          alt=""
+          onClick={openModal}
+        />
+        <span>DiveSea</span>
+        <Modal isOpen={isModal} onClose={closeModal} className={style.modal} />
         <nav className={style.header__navigation}>
           <ul>
             <li>

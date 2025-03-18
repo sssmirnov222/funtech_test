@@ -2,7 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   background: #f9f9f9;
+
+  .modal {
+    margin: 0;
+  }
 
   section {
     display: flex;
@@ -44,12 +49,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     background: #f9f9f9;
 
     section {
       display: flex;
-      align-items: center;
-      margin: 3vh 5vw;
+      align-items: flex-start;
+      margin: 0;
     }
 
     .header__logo {
